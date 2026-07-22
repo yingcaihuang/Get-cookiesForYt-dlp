@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Get cookies.txt LOCALLY - Options</title>
+  <link rel="stylesheet" href="options.css" />
+  <script src="options.mjs" type="module" defer></script>
+</head>
+<body>
+  <div class="options-container">
+    <header class="options-header">
+      <h1>Get cookies.txt LOCALLY</h1>
+      <p class="subtitle">Remote Sync Configuration</p>
+    </header>
+
+    <nav class="tab-nav" role="tablist">
+      <button class="tab-btn active" role="tab" aria-selected="true" data-tab="domains">Blacklist</button>
+      <button class="tab-btn" role="tab" aria-selected="false" data-tab="servers">Server Configuration</button>
+      <button class="tab-btn" role="tab" aria-selected="false" data-tab="history">Sync History</button>
+    </nav>
+
+    <section id="tab-domains" class="tab-panel active" role="tabpanel">
+      <div class="panel-header">
+        <h2>Blacklisted Domains</h2>
+        <button id="add-domain-btn" class="btn btn-primary">Add Domain</button>
+      </div>
+
+      <form id="add-domain-form" class="add-form" hidden>
+        <div class="form-group">
+          <label for="domain-input">Domain</label>
+          <input type="text" id="domain-input" placeholder="example.com" required />
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">Save</button>
+          <button type="button" class="btn btn-secondary" id="cancel-domain-btn">Cancel</button>
+        </div>
+      </form>
+
+      <div id="domain-list" class="list-container">
+        <p class="empty-state">No domains blacklisted. Domains added here will be excluded from all sync operations.</p>
+      </div>
+    </section>
+
+    <section id="tab-servers" class="tab-panel" role="tabpanel" hidden>
+      <div class="panel-header">
+        <h2>Server Configuration</h2>
+        <button id="add-server-btn" class="btn btn-primary">Add Server</button>
+      </div>
+
+      <div class="debug-toggle-container" style="margin-bottom: 16px; display: flex; align-items: center; gap: 8px;">
+        <label class="toggle" title="Enable debug mode">
+          <input type="checkbox" id="debug-toggle" />
+          <span class="toggle-slider"></span>
+        </label>
+        <span style="font-size: 0.85rem; color: var(--color-text-muted);">Debug Mode</span>
+      </div>
+
+      <form id="add-server-form" class="add-form" hidden>
+        <div class="form-group">
+          <label for="server-label-input">Label</label>
+          <input type="text" id="server-label-input" placeholder="My Server" required />
+        </div>
+        <div class="form-group">
+          <label for="server-url-input">URL (HTTPS)</label>
+          <input type="url" id="server-url-input" placeholder="https://example.com/cookies" required />
+        </div>
+        <div class="form-group">
+          <label for="server-auth-header-input">Auth Header Name</label>
+          <input type="text" id="server-auth-header-input" placeholder="Authorization" />
+        </div>
+        <div class="form-group">
+          <label for="server-auth-input">Authorization Key</label>
+          <input type="password" id="server-auth-input" placeholder="Your auth key" required />
+        </div>
+        <div class="form-group">
+          <label for="server-role-input">Role</label>
+          <select id="server-role-input">
+            <option value="none">None</option>
+            <option value="primary">Primary</option>
+            <option value="backup">Backup</option>
+          </select>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">Save</button>
+          <button type="button" class="btn btn-secondary" id="cancel-server-btn">Cancel</button>
+        </div>
+      </form>
+
+      <div id="server-list" class="list-container">
+        <p class="empty-state">No servers configured. Add a server to enable cookie sync.</p>
+      </div>
+    </section>
+
+    <section id="tab-history" class="tab-panel" role="tabpanel" hidden>
+      <div class="panel-header">
+        <h2>Sync History</h2>
+        <div class="filter-group">
+          <label for="history-domain-filter">Filter by domain:</label>
+          <select id="history-domain-filter">
+            <option value="">All domains</option>
+          </select>
+          <button id="clear-logs-btn" class="btn btn-danger">Clear Logs</button>
+        </div>
+      </div>
+
+      <div id="history-list" class="list-container">
+        <p class="empty-state">No sync history available.</p>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

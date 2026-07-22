@@ -40,10 +40,58 @@
             <span class="material-symbols-outlined">check</span>
           </span>
         </button>
+        <button id="toggleDomain" class="export-btn large add-domain">
+          <span class="button-text add-domain-text">
+            Block
+            <span class="material-symbols-outlined">block</span>
+          </span>
+          <span class="button-text del-domain-text">
+            Unblock
+            <span class="material-symbols-outlined">check_circle</span>
+          </span>
+        </button>
+        <div class="sync-btn-wrapper">
+          <button id="sync" class="export-btn large sync" title="Sync cookies to remote server">
+            <span class="button-text default-sync-text">
+              Sync
+              <span class="material-symbols-outlined">sync</span>
+            </span>
+            <span class="button-text sync-success-text">
+              Synced!
+              <span class="material-symbols-outlined">check_circle</span>
+            </span>
+            <span class="button-text sync-error-text">
+              Failed
+              <span class="material-symbols-outlined">error</span>
+            </span>
+          </button>
+          <div id="sync-tooltip" class="sync-tooltip" hidden></div>
+          <div id="sync-debug" class="sync-debug" hidden></div>
+        </div>
+        <button id="syncAll" class="export-btn large sync-all" title="Sync all domains (except blacklisted)">
+          <span class="button-text default-syncall-text">
+            Sync All
+            <span class="material-symbols-outlined">cloud_sync</span>
+          </span>
+          <span class="button-text syncall-success-text">
+            All Synced!
+            <span class="material-symbols-outlined">check_circle</span>
+          </span>
+          <span class="button-text syncall-error-text">
+            Some Failed
+            <span class="material-symbols-outlined">error</span>
+          </span>
+        </button>
         <button id="exportAll" class="export-btn large export-all">
           <span class="button-text">
             Export All Cookies
             <span class="material-symbols-outlined">download</span>
+          </span>
+        </button>
+        <button id="openSettings" class="export-btn large settings">
+          <span class="button-text">
+            Settings
+            <span class="material-symbols-outlined">settings</span>
           </span>
         </button>
       </div>

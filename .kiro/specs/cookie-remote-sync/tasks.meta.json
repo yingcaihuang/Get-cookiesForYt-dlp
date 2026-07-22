@@ -1,0 +1,552 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "1.1 Install Vitest and fast-check as dev dependencies, create vitest.config.mjs with ESM support": [
+      {
+        "executionId": "bead75fe-7c5a-4c57-98dc-e478ccf08ffc",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784695047714
+      },
+      {
+        "executionId": "bead75fe-7c5a-4c57-98dc-e478ccf08ffc",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784695060886
+      },
+      {
+        "executionId": "bead75fe-7c5a-4c57-98dc-e478ccf08ffc",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784695189379
+      }
+    ],
+    "1.2 Create Chrome API mocks for testing": [
+      {
+        "executionId": "bead75fe-7c5a-4c57-98dc-e478ccf08ffc",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784695047744
+      },
+      {
+        "executionId": "bead75fe-7c5a-4c57-98dc-e478ccf08ffc",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784695061660
+      },
+      {
+        "executionId": "bead75fe-7c5a-4c57-98dc-e478ccf08ffc",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784695189856
+      }
+    ],
+    "1.3 Update manifest.json with new permissions and options page": [
+      {
+        "executionId": "bead75fe-7c5a-4c57-98dc-e478ccf08ffc",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784695047778
+      },
+      {
+        "executionId": "bead75fe-7c5a-4c57-98dc-e478ccf08ffc",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784695062485
+      },
+      {
+        "executionId": "bead75fe-7c5a-4c57-98dc-e478ccf08ffc",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784695190689
+      }
+    ],
+    "2.1 Create `src/modules/storage.mjs` with domain entry CRUD operations": [
+      {
+        "executionId": "bead75fe-7c5a-4c57-98dc-e478ccf08ffc",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784695047800
+      },
+      {
+        "executionId": "bead75fe-7c5a-4c57-98dc-e478ccf08ffc",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784695201040
+      },
+      {
+        "executionId": "bead75fe-7c5a-4c57-98dc-e478ccf08ffc",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784695285277
+      }
+    ],
+    "2.2 Add server configuration CRUD to `src/modules/storage.mjs`": [
+      {
+        "executionId": "bead75fe-7c5a-4c57-98dc-e478ccf08ffc",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784695047823
+      },
+      {
+        "executionId": "bead75fe-7c5a-4c57-98dc-e478ccf08ffc",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784695291522
+      },
+      {
+        "executionId": "0f73f7b0-b9b4-4d13-af87-b5acbe2bd769",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784695708609
+      }
+    ],
+    "2.3 Add sync log operations to `src/modules/storage.mjs`": [
+      {
+        "executionId": "bead75fe-7c5a-4c57-98dc-e478ccf08ffc",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784695047843
+      },
+      {
+        "executionId": "bead75fe-7c5a-4c57-98dc-e478ccf08ffc",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784695292340
+      },
+      {
+        "executionId": "0f73f7b0-b9b4-4d13-af87-b5acbe2bd769",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784695709425
+      }
+    ],
+    "3.1 Create `src/modules/http_client.mjs`": [
+      {
+        "executionId": "bead75fe-7c5a-4c57-98dc-e478ccf08ffc",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784695047861
+      },
+      {
+        "executionId": "bead75fe-7c5a-4c57-98dc-e478ccf08ffc",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784695202898
+      },
+      {
+        "executionId": "bead75fe-7c5a-4c57-98dc-e478ccf08ffc",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784695286271
+      }
+    ],
+    "3.2 Create `src/modules/retry.mjs`": [
+      {
+        "executionId": "bead75fe-7c5a-4c57-98dc-e478ccf08ffc",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784695047881
+      },
+      {
+        "executionId": "bead75fe-7c5a-4c57-98dc-e478ccf08ffc",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784695293132
+      },
+      {
+        "executionId": "0f73f7b0-b9b4-4d13-af87-b5acbe2bd769",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784695710261
+      }
+    ],
+    "4.1 Create `src/modules/sync_engine.mjs`": [
+      {
+        "executionId": "bead75fe-7c5a-4c57-98dc-e478ccf08ffc",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784695047901
+      },
+      {
+        "executionId": "0f73f7b0-b9b4-4d13-af87-b5acbe2bd769",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784695760744
+      },
+      {
+        "executionId": "0f73f7b0-b9b4-4d13-af87-b5acbe2bd769",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784695889392
+      }
+    ],
+    "5. Checkpoint - Core modules": [
+      {
+        "executionId": "bead75fe-7c5a-4c57-98dc-e478ccf08ffc",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784695047919
+      },
+      {
+        "executionId": "0f73f7b0-b9b4-4d13-af87-b5acbe2bd769",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784696677749
+      },
+      {
+        "executionId": "0f73f7b0-b9b4-4d13-af87-b5acbe2bd769",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784696704399
+      }
+    ],
+    "6.1 Add alarm management to `src/background.mjs`": [
+      {
+        "executionId": "bead75fe-7c5a-4c57-98dc-e478ccf08ffc",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784695047942
+      },
+      {
+        "executionId": "0f73f7b0-b9b4-4d13-af87-b5acbe2bd769",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784695899081
+      },
+      {
+        "executionId": "0f73f7b0-b9b4-4d13-af87-b5acbe2bd769",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784695990586
+      }
+    ],
+    "6.2 Add failure notification logic to `src/background.mjs`": [
+      {
+        "executionId": "bead75fe-7c5a-4c57-98dc-e478ccf08ffc",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784695047967
+      },
+      {
+        "executionId": "0f73f7b0-b9b4-4d13-af87-b5acbe2bd769",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784696024458
+      },
+      {
+        "executionId": "0f73f7b0-b9b4-4d13-af87-b5acbe2bd769",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784696075343
+      }
+    ],
+    "7.1 Create `src/modules/validation.mjs`": [
+      {
+        "executionId": "bead75fe-7c5a-4c57-98dc-e478ccf08ffc",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784695047986
+      },
+      {
+        "executionId": "bead75fe-7c5a-4c57-98dc-e478ccf08ffc",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784695293947
+      },
+      {
+        "executionId": "0f73f7b0-b9b4-4d13-af87-b5acbe2bd769",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784695710949
+      }
+    ],
+    "8.1 Update `src/popup.html` with Sync button and modern styling structure": [
+      {
+        "executionId": "bead75fe-7c5a-4c57-98dc-e478ccf08ffc",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784695048010
+      },
+      {
+        "executionId": "0f73f7b0-b9b4-4d13-af87-b5acbe2bd769",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784696093233
+      },
+      {
+        "executionId": "0f73f7b0-b9b4-4d13-af87-b5acbe2bd769",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784696228043
+      }
+    ],
+    "8.2 Update `src/popup.mjs` with sync button logic": [
+      {
+        "executionId": "bead75fe-7c5a-4c57-98dc-e478ccf08ffc",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784695048040
+      },
+      {
+        "executionId": "0f73f7b0-b9b4-4d13-af87-b5acbe2bd769",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784696094165
+      },
+      {
+        "executionId": "0f73f7b0-b9b4-4d13-af87-b5acbe2bd769",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784696228846
+      }
+    ],
+    "8.3 Update `src/popup.css` with modern redesign styles": [
+      {
+        "executionId": "bead75fe-7c5a-4c57-98dc-e478ccf08ffc",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784695048059
+      },
+      {
+        "executionId": "0f73f7b0-b9b4-4d13-af87-b5acbe2bd769",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784696094987
+      },
+      {
+        "executionId": "0f73f7b0-b9b4-4d13-af87-b5acbe2bd769",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784696229640
+      }
+    ],
+    "8.4 Update `src/popup.dark.css` for dark mode support": [
+      {
+        "executionId": "bead75fe-7c5a-4c57-98dc-e478ccf08ffc",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784695048076
+      },
+      {
+        "executionId": "0f73f7b0-b9b4-4d13-af87-b5acbe2bd769",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784696095854
+      },
+      {
+        "executionId": "0f73f7b0-b9b4-4d13-af87-b5acbe2bd769",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784696230445
+      }
+    ],
+    "9.1 Create `src/options.html` with tabbed layout structure": [
+      {
+        "executionId": "bead75fe-7c5a-4c57-98dc-e478ccf08ffc",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784695048096
+      },
+      {
+        "executionId": "0f73f7b0-b9b4-4d13-af87-b5acbe2bd769",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784696096473
+      },
+      {
+        "executionId": "0f73f7b0-b9b4-4d13-af87-b5acbe2bd769",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784696231478
+      }
+    ],
+    "9.2 Create `src/options.css` with modern styles": [
+      {
+        "executionId": "bead75fe-7c5a-4c57-98dc-e478ccf08ffc",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784695048117
+      },
+      {
+        "executionId": "0f73f7b0-b9b4-4d13-af87-b5acbe2bd769",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784696236916
+      },
+      {
+        "executionId": "0f73f7b0-b9b4-4d13-af87-b5acbe2bd769",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784696353762
+      }
+    ],
+    "9.3 Create `src/options.mjs` — Tab navigation and Domain Management tab": [
+      {
+        "executionId": "bead75fe-7c5a-4c57-98dc-e478ccf08ffc",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784695048136
+      },
+      {
+        "executionId": "0f73f7b0-b9b4-4d13-af87-b5acbe2bd769",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784696359453
+      },
+      {
+        "executionId": "0f73f7b0-b9b4-4d13-af87-b5acbe2bd769",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784696546382
+      }
+    ],
+    "9.4 Add Server Configuration tab to `src/options.mjs`": [
+      {
+        "executionId": "bead75fe-7c5a-4c57-98dc-e478ccf08ffc",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784695048158
+      },
+      {
+        "executionId": "0f73f7b0-b9b4-4d13-af87-b5acbe2bd769",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784696360247
+      },
+      {
+        "executionId": "0f73f7b0-b9b4-4d13-af87-b5acbe2bd769",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784696547297
+      }
+    ],
+    "9.5 Add Sync History tab to `src/options.mjs`": [
+      {
+        "executionId": "bead75fe-7c5a-4c57-98dc-e478ccf08ffc",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784695048176
+      },
+      {
+        "executionId": "0f73f7b0-b9b4-4d13-af87-b5acbe2bd769",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784696360978
+      },
+      {
+        "executionId": "0f73f7b0-b9b4-4d13-af87-b5acbe2bd769",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784696548157
+      }
+    ],
+    "10. Checkpoint - Full feature integration": [
+      {
+        "executionId": "bead75fe-7c5a-4c57-98dc-e478ccf08ffc",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784695048193
+      },
+      {
+        "executionId": "0f73f7b0-b9b4-4d13-af87-b5acbe2bd769",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784696710422
+      },
+      {
+        "executionId": "0f73f7b0-b9b4-4d13-af87-b5acbe2bd769",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784696732764
+      }
+    ],
+    "11.1 Add message handlers to `src/background.mjs` for options page communication": [
+      {
+        "executionId": "bead75fe-7c5a-4c57-98dc-e478ccf08ffc",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784695048209
+      },
+      {
+        "executionId": "0f73f7b0-b9b4-4d13-af87-b5acbe2bd769",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784696558115
+      },
+      {
+        "executionId": "0f73f7b0-b9b4-4d13-af87-b5acbe2bd769",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784696617714
+      }
+    ],
+    "11.2 Add `chrome.runtime.sendMessage` calls in options.mjs": [
+      {
+        "executionId": "bead75fe-7c5a-4c57-98dc-e478ccf08ffc",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784695048226
+      },
+      {
+        "executionId": "0f73f7b0-b9b4-4d13-af87-b5acbe2bd769",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784696638582
+      },
+      {
+        "executionId": "0f73f7b0-b9b4-4d13-af87-b5acbe2bd769",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784696667734
+      }
+    ],
+    "12. Final checkpoint": [
+      {
+        "executionId": "bead75fe-7c5a-4c57-98dc-e478ccf08ffc",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784695048244
+      },
+      {
+        "executionId": "0f73f7b0-b9b4-4d13-af87-b5acbe2bd769",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784696737952
+      },
+      {
+        "executionId": "0f73f7b0-b9b4-4d13-af87-b5acbe2bd769",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784696791150
+      }
+    ],
+    "1. Set up project infrastructure and testing framework": [
+      {
+        "executionId": "bead75fe-7c5a-4c57-98dc-e478ccf08ffc",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784695190715
+      }
+    ],
+    "2. Implement Storage Module": [
+      {
+        "executionId": "0f73f7b0-b9b4-4d13-af87-b5acbe2bd769",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784695709452
+      }
+    ],
+    "3. Implement HTTP Client and Retry Module": [
+      {
+        "executionId": "0f73f7b0-b9b4-4d13-af87-b5acbe2bd769",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784695710286
+      }
+    ],
+    "7. Implement Server Configuration Validation": [
+      {
+        "executionId": "0f73f7b0-b9b4-4d13-af87-b5acbe2bd769",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784695710977
+      }
+    ],
+    "2.4 Write property tests for Storage Module": [
+      {
+        "executionId": "0f73f7b0-b9b4-4d13-af87-b5acbe2bd769",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784695749214
+      }
+    ],
+    "3.3 Write property tests for Retry Module": [
+      {
+        "executionId": "0f73f7b0-b9b4-4d13-af87-b5acbe2bd769",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784695749930
+      }
+    ],
+    "7.2 Write property tests for validation": [
+      {
+        "executionId": "0f73f7b0-b9b4-4d13-af87-b5acbe2bd769",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784695750818
+      }
+    ],
+    "4. Implement Sync Engine": [
+      {
+        "executionId": "0f73f7b0-b9b4-4d13-af87-b5acbe2bd769",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784695889425
+      }
+    ],
+    "4.2 Write property tests for Sync Engine": [
+      {
+        "executionId": "0f73f7b0-b9b4-4d13-af87-b5acbe2bd769",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784696007087
+      }
+    ],
+    "6. Implement Background Service Worker Extensions": [
+      {
+        "executionId": "0f73f7b0-b9b4-4d13-af87-b5acbe2bd769",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784696075377
+      }
+    ],
+    "6.3 Write property tests for alarm/sync scheduling logic": [
+      {
+        "executionId": "0f73f7b0-b9b4-4d13-af87-b5acbe2bd769",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784696086787
+      }
+    ],
+    "8. Implement Popup UI Changes": [
+      {
+        "executionId": "0f73f7b0-b9b4-4d13-af87-b5acbe2bd769",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784696230465
+      }
+    ],
+    "9. Implement Options Page": [
+      {
+        "executionId": "0f73f7b0-b9b4-4d13-af87-b5acbe2bd769",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784696548186
+      }
+    ],
+    "9.6 Write property tests for domain list rendering": [
+      {
+        "executionId": "0f73f7b0-b9b4-4d13-af87-b5acbe2bd769",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784696633646
+      }
+    ],
+    "11. Wire messaging between popup/options and background": [
+      {
+        "executionId": "0f73f7b0-b9b4-4d13-af87-b5acbe2bd769",
+        "chatSessionId": "sess_d4b8fee1-b3e6-467d-9ebe-a27084aaadd3",
+        "timestamp": 1784696667765
+      }
+    ]
+  }
+}

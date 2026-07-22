@@ -1,14 +1,32 @@
+/* Modern color palette and design tokens */
+:root {
+  --color-primary: #485fc7;
+  --color-secondary: #3f8ecf;
+  --color-accent: #fee08a;
+  --color-success: #48c78e;
+  --color-error: #f14668;
+  --color-bg: #fdfbff;
+  --color-text: #333;
+  --color-sync: #7c5cbf;
+  --radius: 8px;
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-hover: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
 html {
+  min-width: 350px;
+  max-width: 600px;
   width: 500px;
   box-sizing: border-box;
   font-family: "Arial", sans-serif;
-  background-color: #fdfbff;
+  background-color: var(--color-bg);
 }
 
 body {
   margin: 8px;
   width: 484px;
   font-size: 75%;
+  color: var(--color-text);
 }
 
 h1 {
@@ -38,9 +56,11 @@ main {
 
 .export-btn {
   border: none;
-  border-radius: 5px;
+  border-radius: var(--radius);
   height: 2.5rem;
   font-size: 0.9rem;
+  box-shadow: var(--shadow);
+  transition: box-shadow 0.2s ease, filter 0.2s ease, background-color 0.3s ease;
 }
 .export-btn > .button-text {
   display: flex;
@@ -51,6 +71,7 @@ main {
 
 .export-btn:hover {
   filter: brightness(0.85);
+  box-shadow: var(--shadow-hover);
 }
 .export-btn:active {
   filter: brightness(1.15);
@@ -61,18 +82,18 @@ main {
 }
 
 .export-btn.export {
-  background-color: #485fc7;
+  background-color: var(--color-primary);
   color: white;
 }
 
 .export-btn.export-as {
-  background-color: #fee08a;
+  background-color: var(--color-accent);
   color: black;
 }
 
 .export-btn.copy,
 .export-btn.export-all {
-  background-color: #3f8ecf;
+  background-color: var(--color-secondary);
   color: white;
 }
 
@@ -96,10 +117,60 @@ main {
   }
 }
 
+/* Sync button */
+.export-btn.sync {
+  background-color: var(--color-sync);
+  color: white;
+}
+
+.export-btn.sync.sync-success {
+  background-color: var(--color-success);
+}
+
+.export-btn.sync.sync-error {
+  background-color: var(--color-error);
+}
+
+/* Sync text visibility */
+.export-btn.sync .default-sync-text {
+  display: flex;
+}
+.export-btn.sync .sync-success-text {
+  display: none;
+}
+.export-btn.sync .sync-error-text {
+  display: none;
+}
+
+.export-btn.sync.sync-success .default-sync-text {
+  display: none;
+}
+.export-btn.sync.sync-success .sync-success-text {
+  display: flex;
+}
+
+.export-btn.sync.sync-error .default-sync-text {
+  display: none;
+}
+.export-btn.sync.sync-error .sync-error-text {
+  display: flex;
+}
+
+/* Sync tooltip */
+.sync-tooltip {
+  font-size: 0.72rem;
+  color: var(--color-error);
+  text-align: center;
+  padding: 6px 4px;
+  line-height: 1.4;
+}
+
 .table-container {
   width: 100%;
   max-height: 380px;
   overflow: scroll;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
 }
 
 .netscape-table {
@@ -113,4 +184,108 @@ td {
 
 .netscape-table tbody tr:nth-of-type(2n + 1) {
   background-color: aliceblue;
+}
+
+/* Add/Del Domain button (Block/Unblock) */
+.export-btn.add-domain {
+  background-color: #e67e22;
+  color: white;
+}
+
+.export-btn.del-domain {
+  background-color: #2d9d78;
+  color: white;
+}
+
+/* Text visibility for Add/Del Domain */
+.export-btn.add-domain .add-domain-text {
+  display: flex;
+}
+.export-btn.add-domain .del-domain-text {
+  display: none;
+}
+
+.export-btn.del-domain .add-domain-text {
+  display: none;
+}
+.export-btn.del-domain .del-domain-text {
+  display: flex;
+}
+
+.export-btn.settings {
+  background-color: #6b7b8d;
+  color: white;
+}
+
+/* Sync debug info */
+.sync-btn-wrapper {
+  grid-column: 1 / 4;
+  display: flex;
+  flex-direction: column;
+}
+
+.sync-debug {
+  margin-top: 6px;
+  padding: 8px;
+  font-size: 0.7rem;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border, #e0e0e0);
+  border-radius: var(--radius);
+  max-height: 150px;
+  overflow: auto;
+  white-space: pre-wrap;
+  word-break: break-all;
+  color: var(--color-error);
+}
+
+.sync-debug .copy-debug-btn {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.65rem;
+  padding: 2px 8px;
+  cursor: pointer;
+  border: 1px solid var(--color-border, #e0e0e0);
+  border-radius: 4px;
+  background: var(--color-bg);
+  color: var(--color-text, #333);
+}
+
+/* Sync All button */
+.export-btn.sync-all {
+  background-color: #5b6abf;
+  color: white;
+}
+
+.export-btn.sync-all.syncall-success {
+  background-color: var(--color-success);
+}
+
+.export-btn.sync-all.syncall-error {
+  background-color: #e67e22;
+  color: white;
+}
+
+/* Sync All text visibility */
+.export-btn.sync-all .default-syncall-text {
+  display: flex;
+}
+.export-btn.sync-all .syncall-success-text {
+  display: none;
+}
+.export-btn.sync-all .syncall-error-text {
+  display: none;
+}
+
+.export-btn.sync-all.syncall-success .default-syncall-text {
+  display: none;
+}
+.export-btn.sync-all.syncall-success .syncall-success-text {
+  display: flex;
+}
+
+.export-btn.sync-all.syncall-error .default-syncall-text {
+  display: none;
+}
+.export-btn.sync-all.syncall-error .syncall-error-text {
+  display: flex;
 }

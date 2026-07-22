@@ -1,16 +1,46 @@
 @media (prefers-color-scheme: dark) {
+  :root {
+    --color-primary: #6b7fd8;
+    --color-secondary: #5da4e0;
+    --color-accent: #ffe68a;
+    --color-success: #5dd9a5;
+    --color-error: #f76b8a;
+    --color-bg: #1e1e1e;
+    --color-text: #dfdfdf;
+    --color-sync: #9b7fdf;
+    --shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    --shadow-hover: 0 4px 12px rgba(0, 0, 0, 0.4);
+  }
+
   html {
-    background-color: #2a2a2a;
+    background-color: var(--color-bg);
     scrollbar-color: #aaa #333;
-    color: #dfdfdf;
+    color: var(--color-text);
   }
 
   h1 > a#location {
     color: #e09200;
   }
 
+  .export-btn {
+    box-shadow: var(--shadow);
+  }
+
+  .export-btn.export {
+    background-color: var(--color-primary);
+  }
+
+  .export-btn.copy,
+  .export-btn.export-all {
+    background-color: var(--color-secondary);
+  }
+
+  .export-btn.sync {
+    background-color: var(--color-sync);
+  }
+
   .table-container {
-    background-color: #1e1e1e;
+    background-color: #252525;
   }
 
   .netscape-table th,
@@ -26,5 +56,9 @@
     background-color: #3a3a3a;
     color: #dfdfdf;
     border: solid 1px #555;
+  }
+
+  .sync-tooltip {
+    color: var(--color-error);
   }
 }
