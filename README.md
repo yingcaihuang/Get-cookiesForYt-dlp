@@ -2,8 +2,6 @@
 
 > 本地导出并远程同步浏览器 Cookies，安全开源，绝不外泄信息。
 
-![Popup](./ss.png)
-
 ## ✨ 功能特性
 
 - **导出 Cookies** — 支持 Netscape (.txt)、JSON、Header String 三种格式
