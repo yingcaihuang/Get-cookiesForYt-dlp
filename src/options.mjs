@@ -2,6 +2,7 @@ import {
   clearSyncLogs,
   getDomainEntries,
   getDomainEntry,
+  getLoggedDomains,
   getServerConfig,
   getServerConfigs,
   getSyncLogs,
@@ -511,27 +512,27 @@ clearLogsBtn.addEventListener('click', async () => {
   if (selectedDomain) {
     await clearSyncLogs(selectedDomain);
   } else {
-    // Clear logs for all domains
-    const entries = await getDomainEntries();
-    for (const entry of entries) {
-      await clearSyncLogs(entry.domain);
+    // Clear logs for all domains that have logs
+    const loggedDomains = await getLoggedDomains();
+    for (const domain of loggedDomains) {
+      await clearSyncLogs(domain);
     }
   }
   await loadHistory();
 });
 
 async function loadHistory() {
-  // Populate domain filter dropdown
-  const entries = await getDomainEntries();
+  // Get all domains that have sync logs (not from blacklist!)
+  const loggedDomains = await getLoggedDomains();
   const currentFilter = historyDomainFilter.value;
 
-  // Preserve selection while rebuilding options
+  // Populate domain filter dropdown
   historyDomainFilter.innerHTML = '<option value="">All domains</option>';
-  for (const entry of entries) {
+  for (const domain of loggedDomains) {
     const option = document.createElement('option');
-    option.value = entry.domain;
-    option.textContent = entry.domain;
-    if (entry.domain === currentFilter) option.selected = true;
+    option.value = domain;
+    option.textContent = domain;
+    if (domain === currentFilter) option.selected = true;
     historyDomainFilter.appendChild(option);
   }
 
@@ -543,8 +544,8 @@ async function loadHistory() {
     logs = await getSyncLogs(selectedDomain);
   } else {
     // Get logs for all domains and merge
-    for (const entry of entries) {
-      const domainLogs = await getSyncLogs(entry.domain);
+    for (const domain of loggedDomains) {
+      const domainLogs = await getSyncLogs(domain);
       logs = logs.concat(domainLogs);
     }
     // Sort newest first

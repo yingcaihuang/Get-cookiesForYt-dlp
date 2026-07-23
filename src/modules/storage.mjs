@@ -167,6 +167,19 @@ export async function getBackupServer() {
 
 // --- Sync Log Operations ---
 
+/**
+ * Get all domain names that have sync logs.
+ * Scans storage for meta:logIndex:* keys.
+ * @returns {Promise<string[]>}
+ */
+export async function getLoggedDomains() {
+  const allData = await chrome.storage.local.get(null);
+  const prefix = 'meta:logIndex:';
+  return Object.keys(allData)
+    .filter((key) => key.startsWith(prefix))
+    .map((key) => key.slice(prefix.length));
+}
+
 const MAX_LOGS_PER_DOMAIN = 100;
 
 /**

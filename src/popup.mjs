@@ -242,7 +242,15 @@ syncButton.addEventListener('click', async () => {
       const pre = document.createElement('pre');
       pre.style.cssText =
         'margin: 0; font-size: inherit; white-space: pre-wrap;';
-      pre.textContent = `Domain "${domain}" is in the blacklist.\nUnblock it first or remove it from Settings → Blacklist.`;
+      pre.textContent = [
+        `⚠️ 域名 "${domain}" 在黑名单中。`,
+        '   请先点击上方 "Unblock" 解除屏蔽，',
+        '   或前往 Settings → Blacklist 中移除。',
+        '',
+        `⚠️ Domain "${domain}" is blacklisted.`,
+        '   Click "Unblock" above, or remove it',
+        '   from Settings → Blacklist.',
+      ].join('\n');
       syncDebug.appendChild(pre);
       syncDebug.hidden = false;
       return;

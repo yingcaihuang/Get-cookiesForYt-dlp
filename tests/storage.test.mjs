@@ -10,6 +10,7 @@ import {
   getBackupServer,
   getDomainEntries,
   getDomainEntry,
+  getLoggedDomains,
   getPrimaryServer,
   getServerConfig,
   getServerConfigs,
@@ -613,5 +614,56 @@ describe('storage.mjs - Sync Log Operations', () => {
       const logs = await getSyncLogs('nonexistent.com');
       expect(logs).toEqual([]);
     });
+  });
+});
+
+describe('storage.mjs - getLoggedDomains()', () => {
+  beforeEach(() => {
+    resetAll();
+  });
+
+  it('returns empty array when no logs exist', async () => {
+    const domains = await getLoggedDomains();
+    expect(domains).toEqual([]);
+  });
+
+  it('returns domains that have sync logs', async () => {
+    await addSyncLog(makeSyncLogEntry('example.com', 1700000001));
+    await addSyncLog(makeSyncLogEntry('test.org', 1700000002));
+
+    const domains = await getLoggedDomains();
+    expect(domains).toHaveLength(2);
+    expect(domains).toContain('example.com');
+    expect(domains).toContain('test.org');
+  });
+
+  it('does not include domains without logs', async () => {
+    await addSyncLog(makeSyncLogEntry('example.com', 1700000001));
+
+    const domains = await getLoggedDomains();
+    expect(domains).toEqual(['example.com']);
+    expect(domains).not.toContain('other.com');
+  });
+
+  it('does not include domains whose logs have been cleared', async () => {
+    await addSyncLog(makeSyncLogEntry('example.com', 1700000001));
+    await addSyncLog(makeSyncLogEntry('test.org', 1700000002));
+
+    await clearSyncLogs('example.com');
+
+    const domains = await getLoggedDomains();
+    expect(domains).toEqual(['test.org']);
+  });
+
+  it('is independent of the domain blacklist (meta:domainList)', async () => {
+    // Add a domain to blacklist but no logs
+    await saveDomainEntry(makeDomainEntry('blacklisted.com'));
+
+    // Add logs for a domain NOT in the blacklist
+    await addSyncLog(makeSyncLogEntry('synced.com', 1700000001));
+
+    const loggedDomains = await getLoggedDomains();
+    expect(loggedDomains).toEqual(['synced.com']);
+    expect(loggedDomains).not.toContain('blacklisted.com');
   });
 });
